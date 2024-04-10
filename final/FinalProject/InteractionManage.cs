@@ -15,23 +15,25 @@ namespace StoryHub
             discussions = new List<string>();
         }
 
-        // Behaviors (Methods)
+        // Method to allow users to comment on stories
         public void Comment(string comment)
         {
+            comments.Add(comment);
             Console.WriteLine($"Comment added: \"{comment}\"");
-            // Placeholder for allowing users to comment on stories
         }
 
+        // Method to allow users to rate stories
         public void Rate(int rating)
         {
+            ratings.Add(rating);
             Console.WriteLine($"Rating added: {rating}");
-            // Placeholder for enabling users to rate the authenticity or quality of stories
         }
 
+        // Method to facilitate discussions among users based on stories
         public void Discuss(string discussion)
         {
+            discussions.Add(discussion);
             Console.WriteLine($"Discussion started: \"{discussion}\"");
-            // Placeholder for facilitating discussions among users based on stories
         }
     }
 }
